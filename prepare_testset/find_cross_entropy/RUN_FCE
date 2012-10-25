@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+require_once("find_cross_entropy.php");
+//findCrossEntropy("cf.d.emoWrd.2011-07-04", "cf.d.emoWrd.2011-07-04");
+findCrossEntropy("cf.d.emoWrd.2011-07-04", "cf.test.ctf.emoWrd.2011-07-04.07061744");
+//sleep(1800);
+?>

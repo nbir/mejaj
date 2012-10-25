@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+//COMBINE TWEET FILES
+
+require_once("combine_tweet_files.php");
+setTweetFileName("../../_ctf/"."tf.emoWrd");
+combineTweetFiles();
+?>

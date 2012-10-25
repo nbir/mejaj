@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+//LEARNER
+
+require_once("count_word_frequency.php");
+countWordFreq("../_datasets/"."d.emoWrd.2011-07-04", "../_wordbanks/"."w.emoWrd.0704");
+
+?>

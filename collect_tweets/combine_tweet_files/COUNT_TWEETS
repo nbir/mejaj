@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+//countTweets("d.emoWrd.2011-07-09");
+//countTweets("../../_datasets/"."d.emoWrd.2011-07-09");
+countTweets("../../_testsets/"."mejaj.testset");
+
+foreach($no_of_tweets as $key=>$value)
+	print($key." = ".$value."\n");
+print(array_sum($no_of_tweets)." / ".$no_of_blank."\n");
+sleep(18000);
+
+function countTweets($file_name)
+{
+	global $no_of_tweets, $no_of_blank;
+	
+	$fp=fopen($file_name.".csv", "r");
+
+	while(!feof($fp))
+	{
+		$new_tweet=fgetcsv($fp, 256);
+		
+		if($new_tweet)
+		{
+			if(!isset($no_of_tweets[$new_tweet[0]]))
+				$no_of_tweets[$new_tweet[0]]=0;
+			
+			$no_of_tweets[$new_tweet[0]]++;
+		}
+		else
+			$no_of_blank++;
+	}
+
+	fclose($fp);
+}
+?>

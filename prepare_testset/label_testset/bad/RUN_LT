@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+require_once("label_testset.php");
+labelTestset("../../_testsets/"."test.tf.emoWrd.06302036");
+?>

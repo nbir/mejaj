@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+//CLASSIFIER
+
+require_once("naive_bayes_classifier.php");
+readWordBankFromJSON();
+
+$t="Why on earth does he act like this? Is he freaking out of his mind! :-@";
+print("\n".$t."\n");
+print_r(classify($t));
+
+$t="It's Russ' birthday. Going to meet him at the bar. :) :P";
+print("\n".$t."\n");
+print_r(classify($t));
+
+$t="Happy Birthday Ma :)
+I love you with a special love that deepens throughout the years.
+Thank you for the difference you have made in my life ^_^";
+print("\n".$t."\n");
+print_r(classify($t));
+
+sleep(100);
+?>

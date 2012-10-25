@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+//PREPARE DATASET
+/*
+$keywords=array("happy" => "positive", "sad" => "negative");
+file_put_contents("ListKeyword.json", json_encode($keywords));
+*/
+
+
+require_once("prepare_dataset.php");
+setDatasetName("d.emoWrd");
+prepareDataset();
+print("\n".count($TweetIDs)."\n");
+
+?>

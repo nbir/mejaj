@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+
+require_once("prepare_testset.php");
+prepareTestset("../_ctf/", "ctf.emoWrd.2011-07-04");
+sleep(18000);
+?>

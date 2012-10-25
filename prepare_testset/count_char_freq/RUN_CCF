@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+/*
+$Characters=json_decode(file_get_contents("cf.d.emoWrd.2011-06-30".".json"));
+print_r($Characters);
+*/
+
+require_once("count_char_freq.php");
+countCharFreq("../../_datasets/", "d.emoWrd.2011-07-04");
+//countCharFreq("../../_testsets/", "test.ctf.emoWrd.2011-07-04.07061744");
+?>

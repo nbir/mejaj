@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+//CLASSIFIER
+
+require_once("aggregate_classifier.php");
+
+$tweets=findAggregateResults("Hawaii", 1, 1);
+
+print("Positive:\t".count($positive)."\nNegative:\t".count($negative)."\n");
+
+//sleep(18000);
+?>

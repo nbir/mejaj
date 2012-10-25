@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+//FEATURE SELECTOR
+
+require_once("feature_selector.php");
+featureSelector("../../_wb.processed/"."w.emoWrd.p");
+
+//sleep(18000);
+
+?>
